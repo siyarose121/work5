@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imageboots.ico">
+    <style>
+          *{
+    font-family: montserrat;
+}
+body{
+    background:f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+    
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index:2;
+}
+.carousel-caption h5{
+    color: black;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    color:black;
+    width: 60%;
+    margin:auto ;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.navbar-light a{
+    color:black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light.navbar-light.navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+ .team.card.body i{
+    font-size: 20px;
+ }
+ .portfolio.card {
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+ }
+ .team.card {
+    box-shadow:5px 5px 20px rgba(0,0,0,0.15);
+ }
+@media only screen and (min-width:768px) and(max-width:991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:767px){
+    .navbar.nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom:125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+}
+.c1{
+    text-align: center;
+    background-color: rgb( rgb(79, 80, 79));
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-6 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="nature.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5><strong>CONQUER</strong></h5>
+                    <p>Simple bootstrap template</p>
+                  
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="wall1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5> <strong>DREAM HOUSE</strong></h5>
+                    <p> The dream will be solely for me to chill, rest and rejuvenate.</p>
+                    <p><a href="#" class="btn btn-warning mt-3">learn more</a></p>
+                </div>
+            </div> -->
+            
+        
+    </div>
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-20 col-md-20 col-lg-4">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="wall11.jpg" alt="" class="img-fluid" width="1000px" height="600px" >
+                            </div>
+                            <h3 class="card-title py-2">Bootstrap</h3>
+                        
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                 Reprehenderit consequuntur excepturi, eligendi optio 
+                                 ducimus suscipit eum rerum omnis earum! Vitae aut nemo modi 
+                                 corporis corrupti dolorem voluptate porro est! Sed!</p>
+                            <button class="btn btn-warning">See details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card  text-center ">
+                        <div class="card-body ">
+                            <div class="img-area mb-4">
+                                <img src="wall3.jpg" alt="" class="img-fluid" width="1000" height="600">
+                            </div>
+                            <h3 class="card-title" py-2>Responsive Design</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                 Reprehenderit consequuntur excepturi, eligendi optio 
+                                 ducimus suscipit eum rerum omnis earum! Vitae aut nemo modi 
+                                 corporis corrupti dolorem voluptate porro est! Sed!</p>
+                            <button class="btn btn-success">See details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="wall4.jpg" alt="" class="img-fluid" width="1000" height="600">
+                            </div>
+                            <h3 class="card-title py-2">Semantic layout</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ipsam quaerat deserunt quos nulla doloribus? Blanditiis, 
+                                minus? Cumque nihil odit earum sit totam dolorem modi, 
+                                veniam possimus quas, ab, ex eaque!</p>
+                            <button class="btn btn-primary">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="portfolio" class="portfolio ">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-md-10 col-lg-6">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="wall5.jpg" alt=""class="img-fluid"  width="1500px" height="1500px">
+                            </div>
+                            <h3 class="card-title py-2">Two colum left side</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Repudiandae, enim rem atque, ipsa aperiam repellendus 
+                                repellat vero doloribus voluptates velit aspernatur asperiores quasi facere. 
+                                Quaerat odit modi eveniet at excepturi?</p>
+                             </div>
+                       </div>
+                    </div>
+
+                <div class="col-10 col-md-10 col-lg-6">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="wall6.jpg" alt=""class="img-fluid"  width="1500px" height="100px"> 
+                            </div>
+                            <h3 class="card-title py-2">Two colum right side</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Similique ex iure explicabo eos consequatur fugiat quae
+                                  ullam amet, quos consectetur quidem nihil tenetur vero 
+                                  aliquam nam porro. Facilis, sequi dicta.</p>
+                            <button class="btn btn-success">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-8">
+                    <div class="about-imag">
+                        <img src="wall7.jpg" alt="" class="d-block w-500"width="2000px" height="250px">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>Our services</h2>
+                      
+                        <p><center>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Magni animi natus facilis qui sit quos illum esse quisquam 
+                             itaque deserunt expedita, iure vel impedit fugit dignissimos vero, in enim. Numquam.</center></p>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </section>
+<section id="team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="wall8.jpg" alt="" class="img-fluid " width="1000px" height="600px">
+                            <h3 class="card-title py-2">colum one</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Numquam impedit omnis iure tempora ipsa fugiat dolorem, aut quos inventore soluta
+                                  voluptatem maiores velit itaque magni quo facere, laudantium repellat eligendi?
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="wall9.jpg" alt="" class="img-fluid " width="1000px" height="600px">
+                            <h3 class="card-title py-2">colum two</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                 Facilis, earum fuga. Sequi ab a voluptatibus nisi. Id fugit doloremque, 
+                                 facere quo veritatis error architecto. Officia facere fuga vel obcaecati minima!
+                            </p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="wall10.jpg" alt="" class="img-fluid " width="1000px" height="600px">
+                            <h3 class="card-title py-2">colum three</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                 Consequuntur dolore sit quis itaque a aspernatur, magnam deserunt pariatur 
+                                 reprehenderit quasi inventore dicta numquam eum, non incidunt ab quaerat impedit animi.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="WALLL.jpg" alt="" class="img-fluid " width="1000px" height="600px">
+                            <h3 class="card-title py-2">colum four</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Hic magnam animi nihil amet iure nisi. Molestiae soluta sapiente eum nihil sint
+                                  incidunt saepe laudantium dignissimos esse, autem ullam recusandae tenetur.
+                            </p>
+                            <a href="#" class="btn btn-success">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team ">
+        <div class="container">
+            <div class="col-8 col-md-8 col-lg-10">
+            <!-- <div class="col-md-12"> -->
+                <div class="mb-3">
+                    <div class="card-body"><center> <img src="wall1.jpg"  class="d-block w-500" height="500px" width="1000px"></center><br><br>
+                        <h3 class="card-title py-2">One big colum</h3><br>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates itaque autem aperiam.
+                           Adipisci autem esse accusamus unde itaque ipsam, omnis, ea asperiores excepturi, cumque
+                            dignissimos molestiae quisquam! Quidem, unde minus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Saepe mollitia perferendis quisquam magnam quis atque nam quae debitis.
+                              Quo quidem distinctio numquam qui rerum modi commodi esse! Aspernatur, eos eligendi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minima cupiditate culpa odit
+                         cum voluptatem consequatur illum facilis, ad repellendus accusamus itaque ipsam, autem, 
+                         quod nesciunt maiores quia repellat alias!
+                          <br><br><br>
+                        <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h5>Contact Form</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+                             Delectus repudiandae sequi optio labore amet obcaecati expedita <br>
+                             aliquid? Nulla esse libero animi ipsa hic at eaque saepe eligendi. Ullam, sint cum.</p>
+                    </div>
+                </div>
+            </div>
+        
+        <form action="#" class="bg-lightp-4.m-auto" >
+        
+                <div class="row m-0">
+                    <div class="col-md-3 p-0 pt-4 pb-4">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="mb-3">
+                                 <input type="text" class="form-control" required placeholder="your full name">
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" required placeholder="your email">
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="mb-3">
+                                    <textarea rows="3" required class="form-control"
+                                        placeholder="your query here"></textarea>
+                                        <button class="btn btn-info">submit</button>
+                            
+                                </div>
+                            
+                    
+            </form>
+
+        </div>
+        </div>
+        </div>
+
+
+</body>
+
+</html>
